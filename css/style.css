@@ -1,0 +1,35 @@
+:root{
+  --steel-blue: #4682B4;
+  --alice-blue: #F0F8FF;
+  --white: #FFFFFF;
+
+}
+
+body{
+  color: var(--white);
+  background-color: var(--alice-blue);
+}
+
+
+
+.cabecalho{
+  background-color: var(--steel-blue);
+  width: 100%;
+}
+
+.menu__navegacao--itens{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.item--menu__link{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.overview__texto{
+  color: black;
+}
