@@ -2,25 +2,58 @@
   --steel-blue: #4682B4;
   --alice-blue: #F0F8FF;
   --white: #FFFFFF;
-
+  --fonte-principal: 'Josefin Sans', sans-serif;
 }
 
 body{
   color: var(--white);
   background-color: var(--alice-blue);
+  font-family: var(--fonte-principal);
 }
 
 
-
+/*PAGINA PRINCIPAL*/
 .cabecalho{
   background-color: var(--steel-blue);
   width: 100%;
 }
 
+.menu__hamburguer{
+  position: relative;
+  display: block;
+  display: none;
+}
+
+.menu__hamburguer--icone{
+  padding: 1em;
+  width: 30px;
+}
+
+.menu__hamburguer:checked~.container__menu{
+  display: block;
+}
+
+.container__menu{
+  display: none;
+  background-color: var(--steel-blue);
+  position: absolute;
+  width: 60%;
+}
+
 .menu__navegacao--itens{
   display: flex;
-  justify-content: space-between;
-  padding: 1em;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em 0;
+}
+
+.item--menu{
+  padding: 1em 0;
+}
+
+.item--menu__imagem{
+  padding: 0 1em;
+  width: 18px;
 }
 
 .item--menu__link{
@@ -42,6 +75,17 @@ body{
   text-align: center;
 }
 
+.overview__container--foto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.overview__foto{
+  width: 65%;
+  border-radius: 50%;
+}
+
 .overview__texto{
   color: black;
   font-size: 20px;
@@ -54,4 +98,46 @@ body{
   color: var(--steel-blue);
   text-align: end;
   margin: 0 1em;
+}
+
+.rodape{
+  background-color: var(--steel-blue);
+  width: 100%;
+}
+
+.rodape__container{
+  margin-top: 20%;
+  padding: 1em;
+}
+
+.rodape__texto{
+  font-size: 12px;
+}
+
+/*PAGINA SOBRE*/
+
+.sobre__secao{
+  color: black;
+}
+
+.sobre__titulo{
+  margin: 1em 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sobre__container--imagem{
+  text-align: center;
+}
+
+.sobre__foto--autor{
+  align-items: center;
+  padding: 1em;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.sobre__texto{
+  padding: 1em;
 }

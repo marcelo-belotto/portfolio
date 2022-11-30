@@ -5,27 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
   <title>Home - Marcelo Felipe</title> 
 </head> 
 <body>
 
   <header class="cabecalho">
     <nav class="menu__navegacao">
-      <ul class="menu__navegacao--itens">
-        <li class="item--menu"><a href="index.html" class="item--menu__link">Home</a></li>
-        <li class="item--menu"><a href="#" class="item--menu__link">Sobre</a></li>
-        <li class="item--menu"><a href="#" class="item--menu__link">Projetos</a></li>
-        <li class="item--menu"><a href="#" class="item--menu__link">Contato</a></li>
-      </ul>
+      <input type="checkbox" id="menu-burguer" class="menu__hamburguer">
+      <label for="menu-burguer"><img src="img/menu-burger.svg" alt="Icone Menu" class="menu__hamburguer--icone"></label>
+      <div class="container__menu">
+        <ul class="menu__navegacao--itens">
+          <li class="item--menu"><a href="index.html" class="item--menu__link"><img src="img/home.svg" class="item--menu__imagem">Home</a></li>
+          <li class="item--menu"><a href="html/sobre.html" class="item--menu__link"><img src="img/user.svg" class="item--menu__imagem">Sobre</a></li>
+          <li class="item--menu"><a href="html/projetos.html" class="item--menu__link"><img src="img/diagram-project.svg" class="item--menu__imagem">Projetos</a></li>
+          <li class="item--menu"><a href="html/contato.html" class="item--menu__link"><img src="img/envelope.svg" class="item--menu__imagem">Contato</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <section class="overview">
     <h2 class="overview__titulo">Sobre Marcelo</h2>
+    <span class="overview__container--foto">
+    <img src="img/minha-foto.jpg" alt="Foto de Marcelo - Autor do Site" class="overview__foto">
+    </span>
     <p class="overview__texto">Estudante de Análise e Desenvolvimento de Sistemas, Formado em técnico em eletrotécnica e técnico em informática, Amo entender como as coisas funcionam.</p>
-    <a href="#" class="overview__link">Saiba Mais</a>
+    <a href="html/sobre.html" class="overview__link">Saiba Mais</a>
   </section>
+
+  <footer class="rodape">
+    <div class="rodape__container">
+      <p class="rodape__texto">Marcelo Felipe - Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script src="script/script.js"></script> 
 </body> 
