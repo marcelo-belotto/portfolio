@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  
   <title>Projetos - Marcelo Felipe</title> 
 </head> 
 <body>
@@ -28,6 +29,75 @@
     </nav>
   </header>
 
+  <section class="projetos">
+    <h1 class="projetos__titulo">Aqui estão alguns dos meus projetos mais relevantes</h1>
+    <div class="container__projetos">
+      <h2 class="container__projetos--titulo">PubManager</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide"><img src="../img/login-pub.jpg" alt="Tela de login do PubManager" ></div>
+           <div class="swiper-slide"><img src="../img/form-main-pub.jpg" alt="Tela Principal do Pubmanager"></div>
+           <div class="swiper-slide"><img src="../img/cadastro-pub.png" alt="tela de cadastro do PubManager"></div>
+           <!-- If we need navigation buttons
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+         </div>
+        </div>
+
+      <p class="container__projetos--texto">Um gerenciador básico de restaurantes, este projeto foi desenvolvido como TCC do curso técnico de Informática no ano de 2015</p>
+      <p class="container__projetos--texto">Tecnologias: <strong>Java</strong></p>
+      <a href="https://github.com/marcelo-belotto/tcc-senai-2015.git" class="container__projetos--link">Confira no Github</a>
+    </div>
+
+    <div class="container__projetos">
+      <h2 class="container__projetos--titulo">Gerador de senhas Fortes</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide"><img src="../img/gerador-1.jpg" alt="Tela do Gerador de Senhas" ></div>
+           <div class="swiper-slide"><img src="../img/gerador-2.jpg" alt="Resultado do Gerador"></div>
+           <!-- If we need navigation buttons
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+         </div>
+        </div>
+
+      <p class="container__projetos--texto">Uma página contendo um gerador de senhas que utiliza a tabela ASCII como referência</p>
+      <p class="container__projetos--texto">Tecnologias: <strong>HTML , CSS, JavaScript</strong></p>
+      <a href="https://github.com/marcelo-belotto/gerador-senhas.git" class="container__projetos--link">Confira no Github</a>
+    </div>
+
+    <div class="container__projetos">
+      <h2 class="container__projetos--titulo">Ainda não sei</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide"><img src="#" alt="#" ></div>
+           <div class="swiper-slide"><img src="#" alt="#"></div>
+           <div class="swiper-slide"><img src="#" alt="#"></div>
+           <!-- If we need navigation buttons
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+         </div>
+        </div>
+
+      <p class="container__projetos--texto"></p>
+      <a href="https://github.com/marcelo-belotto/tcc-senai-2015.git" class="container__projetos--link">Confira no Github</a>
+    </div>
+  </section>
   
   <footer class="rodape">
     <div class="rodape__container">
@@ -35,6 +105,17 @@
     </div>
   </footer>
 
-  <script src="script/script.js"></script> 
+  <script src="script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },        
+    });
+  </script>
 </body> 
 </html> 
