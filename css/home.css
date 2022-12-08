@@ -1,9 +1,10 @@
 body{
-  min-width: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
 .overview{
-  margin-bottom: 2em;
+  position: relative;
 }
 
 .container__home{
@@ -44,28 +45,25 @@ body{
 }
 
 @media screen and (min-width: 800px){
-  
-  body{
-    min-height: 100vh;
-  }
-  
+   
   .overview__titulo{
     font-size: 40px;
   }
   
   .container__home{
-    margin: 5% 0;
+    position: relative;
+    display: block;
+    margin-bottom: 5em;
   }
 
   .container__overview{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
   }
 
   .overview__container--foto{
-    width: 100%;
+    width: 80%;
     grid-area: 1 / 2;
   }
 

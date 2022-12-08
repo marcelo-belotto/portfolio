@@ -67,10 +67,10 @@ body{
 
   .projetos{
     position: relative;
-    margin-bottom: 3em;
   }
 
   .projetos__titulo{
+    margin-top: 1.5em;
     font-size: 30px;
   }
 
@@ -82,10 +82,11 @@ body{
 
   .container__projetos--titulo{
     font-size: 30px;
+    text-decoration: underline;
   }
   .container__projetos{
     width: 50%;
-    margin: 3em 0;
+    margin-bottom: 2em;
   }
 
   .swiper {
