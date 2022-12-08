@@ -1,3 +1,7 @@
+.overview{
+  margin-bottom: 2em;
+}
+
 .container__home{
   display: flex;
   flex-direction: column;
