@@ -9,6 +9,7 @@
 :root{
   --steel-blue: #4682B4;
   --alice-blue: #F0F8FF;
+  /*--gray-21: #363636;*/
   --white: #FFFFFF;
   --fonte-principal: 'Josefin Sans', sans-serif;
 }
@@ -18,3 +19,5 @@ body{
   background-color: var(--alice-blue);
   font-family: var(--fonte-principal);
 }
+
+

@@ -1,4 +1,4 @@
-.overview{
+.container__home{
   display: flex;
   flex-direction: column;
 }
@@ -36,17 +36,24 @@
 }
 
 @media screen and (min-width: 800px){
+  
+  body{
+    min-height: 100vh;
+  }
+  
   .overview__titulo{
-    margin-top: 3em;
     font-size: 40px;
   }
   
+  .container__home{
+    margin: 5% 0;
+  }
+
   .container__overview{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    margin: 3em 0;
   }
 
   .overview__container--foto{
@@ -56,5 +63,9 @@
 
   .overview__texto{
     width: 100%;
+  }
+
+  .overview__link{
+    font-size: 20px;
   }
 }

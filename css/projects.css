@@ -52,5 +52,34 @@
 }
 
 @media screen and (min-width:800px){
-  
+  body{
+    min-height: 100vh;
+  }
+
+  .projetos{
+    position: relative;
+    margin-bottom: 3em;
+  }
+
+  .projetos__titulo{
+    font-size: 30px;
+  }
+
+  .container__geral--projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__projetos--titulo{
+    font-size: 30px;
+  }
+  .container__projetos{
+    width: 50%;
+    margin: 3em 0;
+  }
+
+  .swiper {
+    width: 100%;
+  }
 }

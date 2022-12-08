@@ -1,9 +1,15 @@
 .sobre__secao{
   color: black;
+  position: relative;
+}
+
+.container__secao{
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0;
 }
 
 .sobre__titulo{
-  margin: 1em 0;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -13,8 +19,39 @@
   padding: 1em;
 }
 
+.container__imagem{
+  display: none;
+}
 
 @media screen and (min-width:800px){
+  body{
+    min-height: 100vh;
+    position: absolute;
+  }
 
+  .sobre__secao{
+    position: relative;
+  }
+
+  .container__secao{
+    display: flex;
+    justify-content: space-between;
+    margin: 15% 0;
+  }
+  
+  .container__sobre{
+    width: 80%;
+    text-align: center;
+    margin: 0 2em;
+  }
+  
+  .container__imagem{
+    display: block;
+    margin: 2em 2em;
+  }
+
+  .container__imagem img{
+    width: 100%;
+  }
   
 }
