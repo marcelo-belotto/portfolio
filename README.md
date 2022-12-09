@@ -4,4 +4,4 @@
 #### Objetivo: 
 > <p>Me apresentar e apresentar meus projetos como portifólio</p>
 #### Status:
-> <p>Lançado em 09/12/2022 no [Github Pages](https://marcelo-belotto.github.io/portfolio/index.html)</p>
+> Lançado em 09/12/2022 no [Github Pages](https://marcelo-belotto.github.io/portfolio/index.html)
