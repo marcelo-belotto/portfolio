@@ -1,7 +1,6 @@
 .rodape{
-  background-color: var(--steel-blue);
+  background-color: var(--MediumSeaGreen);
   width: 100%;
-  position: absolute;
   bottom: 0;
 }
 

@@ -8,15 +8,14 @@
 
 :root{
   --steel-blue: #4682B4;
-  --alice-blue: #F0F8FF;
-  /*--gray-21: #363636;*/
+  --MediumSeaGreen: #3CB371;
   --white: #FFFFFF;
   --fonte-principal: 'Josefin Sans', sans-serif;
 }
 
 body{
   color: var(--white);
-  background-color: var(--alice-blue);
+  background-color: var(--white);
   font-family: var(--fonte-principal);
 }
 

@@ -49,8 +49,8 @@ body{
 
 .container__projetos--link{
   padding: 1em;
-  border: 1px solid var(--steel-blue);
-  background-color: var(--steel-blue);
+  border: 1px solid var(--MediumSeaGreen);
+  background-color: var(--MediumSeaGreen);
   color: var(--white);
   text-decoration: none;
   align-items: center;

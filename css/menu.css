@@ -1,5 +1,5 @@
 .cabecalho{
-  background-color: var(--steel-blue);
+  background-color: var(--MediumSeaGreen);
   width: 100%;
 }
 
@@ -25,7 +25,7 @@
 
 .container__menu{
   display: none;
-  background-color: var(--steel-blue);
+  background-color: var(--MediumSeaGreen);
   position: absolute;
   width: 60%;
 }

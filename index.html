@@ -11,10 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
-  <title>Home - Marcelo Felipe</title> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <title>Portifólio - Marcelo Felipe</title> 
 </head> 
 <body>
-
+  <a name="home"></a>
   <header class="cabecalho">
     <nav class="menu__navegacao">
       <input type="checkbox" id="menu-burguer" class="menu__hamburguer">
@@ -25,9 +26,9 @@
             <a href="index.html" class="item--menu__link">
               <img src="img/home.svg" class="item--menu__imagem">Home</a>
             </li>
-          <li class="item--menu"><a href="html/sobre.html" class="item--menu__link"><img src="img/user.svg" class="item--menu__imagem">Sobre</a></li>
-          <li class="item--menu"><a href="html/projetos.html" class="item--menu__link"><img src="img/diagram-project.svg" class="item--menu__imagem">Projetos</a></li>
-          <li class="item--menu"><a href="html/contato.html" class="item--menu__link"><img src="img/envelope.svg" class="item--menu__imagem">Contato</a></li>
+          <li class="item--menu"><a href="#sobre" class="item--menu__link"><img src="img/user.svg" class="item--menu__imagem">Sobre</a></li>
+          <li class="item--menu"><a href="#projetos" class="item--menu__link"><img src="img/diagram-project.svg" class="item--menu__imagem">Projetos</a></li>
+          <li class="item--menu"><a href="#contato" class="item--menu__link"><img src="img/envelope.svg" class="item--menu__imagem">Contato</a></li>
         </ul>
       </div>
     </nav>
@@ -42,7 +43,118 @@
     </span>
     <p class="overview__texto">Estudante de Análise e Desenvolvimento de Sistemas, Formado em técnico em eletrotécnica e técnico em informática, Amo entender como as coisas funcionam.</p>
     </div>
-    <a href="html/sobre.html" class="overview__link">Saiba Mais</a>
+  </div>
+  </section>
+  <a name="sobre"></a>
+  <section class="sobre__secao">
+    <div class="container__secao">
+    <div class="container__imagem">
+      <span><img src="../img/marcelo-biker.jpg" alt="Foto de Marcelo e ao fundo o Moinho dos povos unidos em Holambra-SP"></span>
+    </div>
+    <div class="container__sobre">
+    <h1 class="sobre__titulo">Marcelo Felipe - Sobre</h1>
+      <p class="sobre__texto">Nasci em 1990 no interior de São Paulo, possuo desde de pequeno a paixão por tecnologia e a curiosidade de saber como as coisas funcionam.</p>
+      <p class="sobre__texto">Tenho como formação os cursos de técnico em informática e técnico em eletrotécnica e estou cursando Superior em Análise e Desenvolvimento de Sistemas.</p>
+      <p class="sobre__texto">Atualmente trabalho como eletricista em uma empresa multinacional do setor automotivo, mas pretendo seguir carreira na área de desenvolvimento de sistemas.</p>
+      <p class="sobre__texto">Meus Hobbies (Quando tenho tempo) incluem: Games e Séries, Atividades físicas como: Pedalar, Correr e Musculação.</p>
+      </div>
+      </div>
+    </section>
+    <a name="projetos"></a>
+  <section class="projetos">
+    <h1 class="projetos__titulo">Aqui estão alguns dos meus projetos:</h1>
+    <div class="container__geral--projetos">
+    <div class="container__projetos">
+      <h2 class="container__projetos--titulo">PubManager</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide"><img src="../img/login-pub.jpg" alt="Tela de login do PubManager" ></div>
+           <div class="swiper-slide"><img src="../img/form-main-pub.jpg" alt="Tela Principal do Pubmanager"></div>
+           <div class="swiper-slide"><img src="../img/cadastro-pub.png" alt="tela de cadastro do PubManager"></div>
+           <!-- If we need navigation buttons
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+         </div>
+        </div>
+
+      <p class="container__projetos--texto">Um gerenciador básico de restaurantes, este projeto foi desenvolvido em grupo como TCC do curso técnico de Informática no ano de 2015</p>
+      <p class="container__projetos--texto">Tecnologias: <strong>Java</strong></p>
+      <a href="https://github.com/marcelo-belotto/tcc-senai-2015.git" class="container__projetos--link">Confira no Github</a>
+    </div>
+
+    <div class="container__projetos">
+      <h2 class="container__projetos--titulo">Gerador de senhas Fortes</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide"><img src="../img/gerador-1.jpg" alt="Tela do Gerador de Senhas" ></div>
+           <div class="swiper-slide"><img src="../img/gerador-2.jpg" alt="Resultado do Gerador"></div>
+           <!-- If we need navigation buttons
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+         </div>
+        </div>
+
+      <p class="container__projetos--texto">Uma página contendo um gerador de senhas</p>
+      <p class="container__projetos--texto">Tecnologias: <strong>HTML , CSS, JavaScript</strong></p>
+      <a href="https://github.com/marcelo-belotto/gerador-senhas.git" class="container__projetos--link">Confira no Github</a>
+      <a href="https://marcelo-belotto.github.io/gerador-senhas/" class="container__projetos--link">Experimente Aqui!</a>
+    </div>
+
+    <div class="container__projetos">
+      <h2 class="container__projetos--titulo">Pong</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide"><img src="../img/pong-main.jpg" alt="Tela do Jogo Pong" ></div>
+           <div class="swiper-slide"><img src="../img/pong-game.jpg" alt="Tela do Jogo Pong"></div>
+           <!-- If we need navigation buttons
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>--> 
+         </div>
+        </div>
+
+      <p class="container__projetos--texto">Um simples jogo de raquetes construído para desenvolver a lógica de programação utilizando JavaScript (Obs.: Contém alguns Bug's)</p>
+      <p class="container__projetos--texto">Tecnologias: <strong>HTML Canvas, JavaScript</strong></p>
+      <a href="https://github.com/marcelo-belotto/pong-canvas.git" class="container__projetos--link">Confira no Github</a>
+      <a href="https://marcelo-belotto.github.io/pong-canvas/" class="container__projetos--link">Experimente Aqui!</a>
+    </div>
+  </div>
+  </section>
+  <a name="contato"></a>
+  <section class="contato">
+    <div class="container__contato">
+    <h1 class="contato__titulo">Você pode me contatar nas seguintes Redes Sociais ou via E-mail:</h1>
+    <ul class="contato__lista--redes">
+      <li class="lista--item">
+        <a href="https://linkedin.com/in/marcelo-belotto-497a65a3" class="lista--link">
+          <img src="../img/linkedin.svg" alt="Icone Linkedin" class="lista--imagem">Linkedin</a>
+      </li>
+      <li class="lista--item">
+      <a href="https://github.com/marcelo-belotto" class="lista--link">
+        <img src="../img/github.svg" alt="Icone Github" class="lista--imagem">Github</a>
+    </li>
+      <li class="lista--item">
+      <a href="https://www.instagram.com/marcelo_felipe90/" class="lista--link"><img src="../img/instagram.svg" alt="Icone Instagram" class="lista--imagem">Instagram</a>
+    </li>
+      <li class="lista--item">
+        <a href="mailto:marcelopdr@yahoo.com.br" class="lista--link">
+          <img src="../img/envelope.svg" alt="Icone Instagram" class="lista--imagem">E-mail</a>
+      </li>
+    </ul>
   </div>
   </section>
 
@@ -52,6 +164,17 @@
     </div>
   </footer>
 
-  <script src="script/script.js"></script> 
-</body> 
+  <script src="script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },        
+    });
+  </script>
+</body>
 </html> 
